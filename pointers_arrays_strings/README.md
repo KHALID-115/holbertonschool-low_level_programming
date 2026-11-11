@@ -18,3 +18,4 @@ This project covers pointers, arrays, strings and variable scope in C.
 | `8-print_array.c` | Function that prints n elements of an array of integers, followed by a new line |
 | `9-strcpy.c` | Function that copies the string pointed to by src to the buffer pointed to by dest |
 | `100-atoi.c` | Function that converts a string to an integer |
+| `0-strcat.c` | Function that concatenates two strings |
