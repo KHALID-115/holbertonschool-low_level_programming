@@ -14,3 +14,4 @@ This project covers pointers, arrays, strings and variable scope in C.
 | `4-print_rev.c` | Function that prints a string, in reverse, followed by a new line |
 | `5-rev_string.c` | Function that reverses a string |
 | `6-puts2.c` | Function that prints every other character of a string, starting with the first character |
+| `7-puts_half.c` | Function that prints half of a string, followed by a new line |
