@@ -12,3 +12,4 @@ This project covers pointers, arrays, strings and variable scope in C.
 | `2-strlen.c` | Function that returns the length of a string |
 | `3-puts.c` | Function that prints a string, followed by a new line, to stdout |
 | `4-print_rev.c` | Function that prints a string, in reverse, followed by a new line |
+| `5-rev_string.c` | Function that reverses a string |
