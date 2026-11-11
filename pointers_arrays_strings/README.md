@@ -19,3 +19,4 @@ This project covers pointers, arrays, strings and variable scope in C.
 | `9-strcpy.c` | Function that copies the string pointed to by src to the buffer pointed to by dest |
 | `100-atoi.c` | Function that converts a string to an integer |
 | `0-strcat.c` | Function that concatenates two strings |
+| `1-strncat.c` | Function that concatenates two strings, using at most n bytes from src |
