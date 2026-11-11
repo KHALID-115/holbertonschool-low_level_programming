@@ -26,3 +26,4 @@ This project covers pointers, arrays, strings and variable scope in C.
 | `5-string_toupper.c` | Function that changes all lowercase letters of a string to uppercase |
 | `6-cap_string.c` | Function that capitalizes all words of a string |
 | `7-leet.c` | Function that encodes a string into 1337 |
+| `0-memset.c` | Function that fills memory with a constant byte |
