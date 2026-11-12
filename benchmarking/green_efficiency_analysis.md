@@ -12,7 +12,7 @@ The baseline runs were close but not identical: the gap between the fastest and 
 
 In the algorithm comparison, the naive implementation (nested loops, O(n^2)) averaged 2.779739 seconds over five runs, with values from 2.765204 to 2.808108 seconds. The single-pass implementation (O(n)) averaged 0.000108 seconds, with values from 0.000105 to 0.000114 seconds. The naive version was therefore about 25,700 times slower. For ARRAY_SIZE = 50000, the naive version performs about 1,250,025,000 inner iterations versus 50,000 for the single pass, a theoretical ratio of about 25,000, close to the measured one. The two results also differ (625025000 vs 25000) because the naive version recounts earlier elements in every outer iteration, so it computes a different count, not only a slower one.
 
-In the instrumentation lab, the average measured times over five runs were TOTAL [T] seconds, BUILD_DATA [B] seconds, PROCESS [P] seconds and REDUCE [R] seconds. The phase that took the most time was [phase], and TOTAL was [greater than or equal to] each sub-measurement as required.
+In the instrumentation lab, the average measured times over five runs were TOTAL 0.000773 seconds, BUILD_DATA 0.000315 seconds, PROCESS 0.000319 seconds and REDUCE 0.000135 seconds. PROCESS had the highest average, but its margin over BUILD_DATA (0.000004 seconds) is smaller than the run-to-run variation, so the two phases should be treated as roughly equal. REDUCE was consistently the shortest and the most stable, between 0.000135 and 0.000136 seconds. TOTAL ranged from 0.000731 to 0.000843 seconds, and in every run it was greater than or equal to each sub-measurement, as required. Most of the variation in TOTAL came from BUILD_DATA, which ranged from 0.000261 to 0.000391 seconds.
 
 ## Relation Between Runtime and Energy Consumption
 
@@ -20,7 +20,7 @@ A longer runtime means the CPU stays active longer, which generally increases en
 
 ## Limitations of the Experiment
 
-First, only runtime was measured, not real power draw, so all energy conclusions are indirect. Second, `clock()` has limited resolution, and very short measurements such as the single-pass time of about 0.000108 seconds and the instrumentation phases ([mention any 0.000000 or very small values you saw]) cannot be compared reliably. Third, the number of runs was small (three for the baseline, five for the others), so averages could shift with more runs. Fourth, background processes, CPU scheduling and caching likely explain the 2.3% baseline spread, although I did not measure these causes directly. Finally, all measurements come from one machine, so absolute times may not transfer to other hardware.
+First, only runtime was measured, not real power draw, so all energy conclusions are indirect. Second, `clock()` has limited resolution, and very short measurements such as the single-pass time of about 0.000108 seconds and the instrumentation phases (all between 0.000135 and 0.000391 seconds per phase, so a single clock tick of difference is a large fraction of each value) cannot be compared reliably. Third, the number of runs was small (three for the baseline, five for the others), so averages could shift with more runs. Fourth, background processes, CPU scheduling and caching likely explain the 2.3% baseline spread, although I did not measure these causes directly. Finally, all measurements come from one machine, so absolute times may not transfer to other hardware.
 
 ## Practical Engineering Takeaway
 
