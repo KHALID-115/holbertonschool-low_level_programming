@@ -17,3 +17,7 @@ Prototype: `void print_dog(struct dog *d);`
 ## 4. A door is what a dog is perpetually on the wrong side of
 `new_dog` creates a new dog, storing a copy of `name` and `owner`. Returns `NULL` if it fails.
 Prototype: `dog_t *new_dog(char *name, float age, char *owner);`
+
+## 5. How many legs does a dog have if you call his tail a leg? Four. Saying that a tail is a leg doesn't make it a leg
+`free_dog` frees a dog (its `name`, its `owner` and the struct itself).
+Prototype: `void free_dog(dog_t *d);`
