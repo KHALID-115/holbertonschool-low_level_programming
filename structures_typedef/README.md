@@ -13,3 +13,7 @@ Prototype: `void print_dog(struct dog *d);`
 
 ## 3. Outside of a dog, a book is a man's best friend. Inside of a dog it's too dark to read
 `dog.h` also defines `dog_t` as a new name for the type `struct dog`.
+
+## 4. A door is what a dog is perpetually on the wrong side of
+`new_dog` creates a new dog, storing a copy of `name` and `owner`. Returns `NULL` if it fails.
+Prototype: `dog_t *new_dog(char *name, float age, char *owner);`
