@@ -10,3 +10,6 @@ Prototype: `void init_dog(struct dog *d, char *name, float age, char *owner);`
 ## 2. A dog will teach you unconditional love. If you can have that in your life, things won't be too bad
 `print_dog` prints a `struct dog`. Prints `(nil)` for any `NULL` element, and nothing if `d` is `NULL`.
 Prototype: `void print_dog(struct dog *d);`
+
+## 3. Outside of a dog, a book is a man's best friend. Inside of a dog it's too dark to read
+`dog.h` also defines `dog_t` as a new name for the type `struct dog`.
