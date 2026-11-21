@@ -14,3 +14,8 @@ Prototype: `char *string_nconcat(char *s1, char *s2, unsigned int n);`
 Function `_calloc` allocates memory for an array of `nmemb` elements of `size` bytes
 each and sets it to zero. Returns `NULL` if `nmemb` or `size` is 0, or if `malloc` fails.
 Prototype: `void *_calloc(unsigned int nmemb, unsigned int size);`
+
+## 3-array_range.c
+Function `array_range` creates an array of integers from `min` to `max`, both included.
+Returns `NULL` if `min` > `max` or if `malloc` fails.
+Prototype: `int *array_range(int min, int max);`
