@@ -9,3 +9,8 @@ Prototype: `void *malloc_checked(unsigned int b);`
 Function `string_nconcat` concatenates `s1` with the first `n` bytes of `s2`
 into newly allocated memory. Returns `NULL` on failure.
 Prototype: `char *string_nconcat(char *s1, char *s2, unsigned int n);`
+
+## 2-calloc.c
+Function `_calloc` allocates memory for an array of `nmemb` elements of `size` bytes
+each and sets it to zero. Returns `NULL` if `nmemb` or `size` is 0, or if `malloc` fails.
+Prototype: `void *_calloc(unsigned int nmemb, unsigned int size);`
